@@ -11,8 +11,25 @@
 
 #include "mbed.h"
 
+
+/**
+ * @brief 
+ * 
+ */
 const int SAMPLES_INPUT   = 4;  
 
+
+
+/**
+ * @brief 
+ * 
+ * @param Ign 
+ * @param arrayIgn 
+ * @param actIgn 
+ * @param preIgn 
+ * @param cont 
+ * @return int 
+ */
 int exeIgnition(DigitalIn *Ign, bool arrayIgn[], bool *actIgn, bool *preIgn, int *cont) {
     bool are_equal = false;
     int answer = 0;
@@ -41,6 +58,18 @@ int exeIgnition(DigitalIn *Ign, bool arrayIgn[], bool *actIgn, bool *preIgn, int
     return(answer);
 }
 
+
+
+/**
+ * @brief 
+ * 
+ * @param my_Input 
+ * @param my_arrayInput 
+ * @param my_Input_read 
+ * @param my_Input_previous 
+ * @param cont 
+ * @return int 
+ */
 int procesar_entradas(DigitalIn *my_Input, bool my_arrayInput[], bool *my_Input_read, bool *my_Input_previous, int *cont) {
     bool are_equal = false;
     int answer = 0;
