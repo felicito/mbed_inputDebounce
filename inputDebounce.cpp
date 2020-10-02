@@ -70,7 +70,7 @@ int exeIgnition(DigitalIn *Ign, bool arrayIgn[], bool *actIgn, bool *preIgn, int
  * @param cont 
  * @return int 
  */
-int procesar_entradas(DigitalIn *my_Input, bool my_arrayInput[], bool *my_Input_read, bool *my_Input_previous, int *cont) {
+int exeDigInput(DigitalIn *my_Input, bool my_arrayInput[], bool *my_Input_read, bool *my_Input_previous, int *cont) {
     bool are_equal = false;
     int answer = 0;
 
